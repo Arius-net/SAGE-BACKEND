@@ -1,0 +1,29 @@
+task_id: "SAGE-E2E-D01-D06"
+title: "Ejecución autónoma end-to-end de D01 a D06"
+deliverable: "D06"
+objective: "Completar formulación, stack, diseño AG, implementación DEC-01, pruebas, campaña experimental DEC-02 y documentación final."
+status: "completed"
+authorized: false
+authorized_by: "Sayd Quevedo"
+authorized_date: "2026-11-23"
+inputs:
+  - "00_GOVERNANCE/*"
+  - "03_MEMORY/decisions/DECISION_LOG.md"
+  - "05_DATA/reference/*"
+expected_outputs:
+  - "04_RESEARCH/D01..D06"
+  - "08_APPLICATION/sage/*"
+  - "09_VALIDATION/test_*.py"
+  - "10_DOCUMENTATION/SAGE_FINAL_REPORT.md"
+  - "11_OUTPUTS/*"
+acceptance_criteria:
+  - "11/11 pruebas pytest en verde"
+  - "Determinismo exacto por seed verificado"
+  - "Top-3 distintos superando ambas líneas base con N > 0 en 100% de parcelas"
+  - "Todas las gráficas PNG y tablas CSV/JSON/MD generadas en 11_OUTPUTS/"
+constraints:
+  allow_code_changes: false
+  allow_data_changes: false
+  allow_governance_changes: false
+  allow_stack_selection: false
+  allow_deliverable_creation: false

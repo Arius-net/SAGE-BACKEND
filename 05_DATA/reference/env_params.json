@@ -1,0 +1,49 @@
+{
+  "schema_version": "1.1.0",
+  "data_vintage": "2026-11-23",
+  "source_type": "synthetic_static_environment_parameters",
+  "horizon": {
+    "years": 5,
+    "cycles_per_year": 2,
+    "total_cycles": 10,
+    "cycle_seasons": ["PV", "OI", "PV", "OI", "PV", "OI", "PV", "OI", "PV", "OI"]
+  },
+  "irrigation_levels_mm": {
+    "0": 0.0,
+    "1": 150.0,
+    "2": 300.0,
+    "3": 450.0,
+    "4": 600.0
+  },
+  "economics": {
+    "water_cost_mxn_per_mm_ha": 9.0,
+    "currency": "MXN"
+  },
+  "soil_nitrogen": {
+    "critical_min_kg_ha": 0.0,
+    "target_healthy_kg_ha": 45.0,
+    "max_capacity_kg_ha": 120.0,
+    "depleted_yield_factor": 0.20
+  },
+  "agronomic_factors": {
+    "out_of_season_yield_factor": 0.35,
+    "monoculture_yield_factor": 0.80,
+    "min_water_stress_yield_factor": 0.25
+  },
+  "fitness_weights": {
+    "w_production": 0.38,
+    "w_cost": 0.22,
+    "w_nitrogen": 0.22,
+    "w_water": 0.18
+  },
+  "penalties": {
+    "nitrogen_depletion_per_violation": 2.50,
+    "out_of_season_per_violation": 0.85,
+    "consecutive_monoculture_per_violation": 0.65
+  },
+  "normalization_scales": {
+    "max_expected_revenue_per_ha_cycle": 44000.0,
+    "max_expected_cost_per_ha_cycle": 19000.0,
+    "max_expected_water_dev_mm_cycle": 600.0
+  }
+}

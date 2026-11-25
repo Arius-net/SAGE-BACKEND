@@ -1,0 +1,43 @@
+{
+  "schema_version": "1.0.0",
+  "data_vintage": "2026-11-23",
+  "scenario_id": "PILOT_5P_10C",
+  "description": "Escenario piloto sintético de 5 parcelas heterogéneas en área y nitrógeno inicial para un horizonte de 5 años (10 ciclos PV/OI).",
+  "parcels": [
+    {
+      "parcel_id": "P1",
+      "name": "Parcela Norte-A",
+      "area_ha": 4.0,
+      "initial_nitrogen_kg_ha": 58.0,
+      "soil_profile": "franco_arcilloso"
+    },
+    {
+      "parcel_id": "P2",
+      "name": "Parcela Norte-B",
+      "area_ha": 3.5,
+      "initial_nitrogen_kg_ha": 46.0,
+      "soil_profile": "franco_limoso"
+    },
+    {
+      "parcel_id": "P3",
+      "name": "Parcela Centro",
+      "area_ha": 5.0,
+      "initial_nitrogen_kg_ha": 64.0,
+      "soil_profile": "franco"
+    },
+    {
+      "parcel_id": "P4",
+      "name": "Parcela Sur-A",
+      "area_ha": 2.5,
+      "initial_nitrogen_kg_ha": 40.0,
+      "soil_profile": "franco_arenoso"
+    },
+    {
+      "parcel_id": "P5",
+      "name": "Parcela Sur-B",
+      "area_ha": 3.0,
+      "initial_nitrogen_kg_ha": 52.0,
+      "soil_profile": "franco"
+    }
+  ]
+}

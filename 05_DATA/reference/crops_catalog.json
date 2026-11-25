@@ -1,0 +1,84 @@
+{
+  "schema_version": "1.1.0",
+  "data_vintage": "2026-11-23",
+  "source_type": "synthetic_agronomic_reference_catalog",
+  "units": {
+    "cost": "MXN/ha/cycle",
+    "yield": "ton/ha/cycle",
+    "price": "MXN/ton",
+    "nitrogen_delta": "kg_N/ha/cycle",
+    "water_req": "mm/cycle"
+  },
+  "crops": [
+    {
+      "crop_id": 0,
+      "name": "Barbecho/Descanso",
+      "category": "rest",
+      "compatible_seasons": ["PV", "OI"],
+      "base_cost_mxn_ha": 1600.0,
+      "nominal_yield_ton_ha": 0.0,
+      "reference_price_mxn_ton": 0.0,
+      "nitrogen_delta_kg_ha": 26.0,
+      "water_req_mm": {
+        "PV": 0.0,
+        "OI": 0.0
+      }
+    },
+    {
+      "crop_id": 1,
+      "name": "Maíz",
+      "category": "cereal_extractive",
+      "compatible_seasons": ["PV"],
+      "base_cost_mxn_ha": 12400.0,
+      "nominal_yield_ton_ha": 9.5,
+      "reference_price_mxn_ton": 4600.0,
+      "nitrogen_delta_kg_ha": -32.0,
+      "water_req_mm": {
+        "PV": 600.0,
+        "OI": 450.0
+      }
+    },
+    {
+      "crop_id": 2,
+      "name": "Frijol",
+      "category": "legume_fixer",
+      "compatible_seasons": ["PV", "OI"],
+      "base_cost_mxn_ha": 8800.0,
+      "nominal_yield_ton_ha": 2.4,
+      "reference_price_mxn_ton": 15600.0,
+      "nitrogen_delta_kg_ha": 24.0,
+      "water_req_mm": {
+        "PV": 300.0,
+        "OI": 150.0
+      }
+    },
+    {
+      "crop_id": 3,
+      "name": "Sorgo",
+      "category": "cereal_drought_tolerant",
+      "compatible_seasons": ["PV"],
+      "base_cost_mxn_ha": 8200.0,
+      "nominal_yield_ton_ha": 6.8,
+      "reference_price_mxn_ton": 3900.0,
+      "nitrogen_delta_kg_ha": -20.0,
+      "water_req_mm": {
+        "PV": 450.0,
+        "OI": 300.0
+      }
+    },
+    {
+      "crop_id": 4,
+      "name": "Avena/Trigo",
+      "category": "cereal_cool_season",
+      "compatible_seasons": ["OI"],
+      "base_cost_mxn_ha": 7800.0,
+      "nominal_yield_ton_ha": 5.6,
+      "reference_price_mxn_ton": 5000.0,
+      "nitrogen_delta_kg_ha": -18.0,
+      "water_req_mm": {
+        "PV": 450.0,
+        "OI": 300.0
+      }
+    }
+  ]
+}

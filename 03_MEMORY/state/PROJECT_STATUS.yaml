@@ -1,0 +1,38 @@
+project: "SAGE"
+long_name: "Sistema Agrícola de Genética Evolutiva"
+version: "1.0.0"
+baseline_date: "2026-11-23"
+owner: "Sayd Quevedo"
+current_phase: "D06_APPROVED"
+active_deliverable: null
+project_status: "approved_and_closed"
+governance_baseline: "D-0001"
+latest_decision_id: "D-0005"
+tech_stack_status: "approved_D0002_migrated_BACKEND_D0004"
+currency: "MXN"
+evidence_mode: "technical_only"
+deliverables:
+  D01:
+    title: "Formulación del Problema y Línea Base"
+    status: "approved"
+  D02:
+    title: "Arquitectura del Sistema y Matriz de Stack Tecnológico"
+    status: "approved"
+  D03:
+    title: "Diseño de Datos, Modelo de Cromosoma y Función Fitness"
+    status: "approved"
+  D04:
+    title: "Implementación de la Rebanada Vertical DEC-01"
+    status: "approved"
+  D05:
+    title: "Calibración, Experimentación Reproducible y Validación DEC-02"
+    status: "approved"
+  D06:
+    title: "Documentación Final, Empaquetado y Defensa Académica"
+    status: "approved"
+last_validated_state:
+  date: "2026-11-23"
+  phase: "D06_APPROVED"
+  summary: "Proyecto SAGE cerrado y aprobado en D-0005: código en BACKEND/, moneda MXN, OQ-01..OQ-08 cerradas, 11/11 pruebas pytest pasando, EXP-002 (seed=2026, Fitness=0.7695, utilidad 3,852,575.00 MXN) exportado en 11_OUTPUTS/ y reporte final en 10_DOCUMENTATION/SAGE_FINAL_REPORT.md."
+pending_approval: false
+next_expected_action: "Proyecto listo para entrega y defensa académica en Fundamentos de Inteligencia Artificial."
