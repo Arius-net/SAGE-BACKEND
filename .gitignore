@@ -1,0 +1,54 @@
+# =============================================================================
+# SAGE — .gitignore agnóstico de stack (línea base 2026-11-23)
+# =============================================================================
+
+# --- Variables de entorno y secretos locales ---
+.env
+.env.local
+.env.*.local
+*.key
+*.pem
+*.p12
+secrets.*
+
+# --- Entornos virtuales, dependencias y cachés genéricos ---
+.venv/
+venv/
+env/
+node_modules/
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.cache/
+dist/
+build/
+target/
+out/
+coverage/
+*.log
+*.tmp
+*.bak
+
+# --- Datos masivos y salidas temporales de ejecución ---
+05_DATA/raw/*
+!05_DATA/raw/.gitkeep
+11_OUTPUTS/tmp/
+11_OUTPUTS/*.tmp
+11_OUTPUTS/*.bak
+
+# --- Editores e IDEs ---
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+*.sublime-workspace
+
+# --- Archivos del sistema operativo ---
+.DS_Store
+Thumbs.db
+Desktop.ini
+ehthumbs.db

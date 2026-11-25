@@ -1,0 +1,62 @@
+# =============================================================================
+# SAGE — Plantilla de Configuración de Entorno (NO contiene secretos reales)
+# Proyecto: Sistema Agrícola de Genética Evolutiva
+# Fecha de línea base: 2026-11-23 | Versión: 1.0.0
+# =============================================================================
+
+project:
+  name: "SAGE"
+  long_name: "Sistema Agrícola de Genética Evolutiva"
+  version: "1.0.0"
+  baseline_date: "2026-11-23"
+  mode: "prescriptive_optimization"
+  stack: "python3.12_numpy_pandas_matplotlib_pytest"  # Aprobado en D-0002 (D02)
+
+horizon:
+  years: 5
+  cycles_per_year: 2
+  total_cycles: 10
+  seasons:
+    - "PV"  # Primavera-Verano
+    - "OI"  # Otoño-Invierno
+
+pilot_scope:
+  min_parcels: 3
+  max_parcels: 10
+  default_parcels: 5
+  crop_codes:
+    0: "Barbecho/Descanso"
+    1: "Maíz"
+    2: "Frijol"
+    3: "Sorgo"
+    4: "Avena/Trigo"
+
+data_sources:
+  nature: "synthetic_and_static_reference_catalogs"
+  pii_allowed: false
+  phi_allowed: false
+  data_vintage: "2026-11-23"
+  fail_fast_validation: true
+  paths:
+    backend_dir: "BACKEND/"
+    requirements_file: "BACKEND/requirements.txt"
+    data_dir: "05_DATA/reference/"
+    crops_catalog: "05_DATA/reference/crops_catalog.json"
+    env_params: "05_DATA/reference/env_params.json"
+    parcels_input: "05_DATA/reference/parcels_input.json"
+    outputs_dir: "11_OUTPUTS/"
+
+optimization_thresholds:
+  critical_nitrogen_min: 0.0
+  strict_nitrogen_positive: true
+  top_k_individuals: 3
+  require_distinct_top_k: true
+  reproducibility:
+    require_explicit_seed: true
+    default_seed: 42
+
+governance:
+  primary_decision: "DEC-01"
+  secondary_decision: "DEC-02"
+  baseline_decision_id: "D-0001"
+  evidence_mode: "technical_only"

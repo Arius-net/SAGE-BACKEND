@@ -1,0 +1,6 @@
+plan_id,run_id,scenario_id,seed,data_vintage,fitness,base_score,penalty_total,total_cost_mxn,total_revenue_mxn,net_profit_mxn,total_production_ton,mean_final_nitrogen_kg_ha,min_nitrogen_any_cycle_kg_ha,mean_water_deviation_mm,nitrogen_violations,season_violations,monoculture_violations,feasible_nitrogen
+Baseline_Monocultivo,EXP-003,PILOT_5P_10C,777,2026-11-23,-2.846365,0.253635,3.1,3204000.0,1510272.0,-1693728.0,328.32,-268.0,-280.0,75.0,45,25,45,False
+Baseline_Rotacion_Empirica,EXP-003,PILOT_5P_10C,777,2026-11-23,0.557369,0.557369,0.0,1771200.0,3274920.0,1503720.0,521.4,56.0,6.0,195.0,0,0,0,True
+SAGE_Top_1,EXP-003,PILOT_5P_10C,777,2026-11-23,0.634319,0.634319,0.0,1697150.0,3628730.0,1931580.0,557.72,82.8,26.0,156.0,0,0,0,True
+SAGE_Top_2,EXP-003,PILOT_5P_10C,777,2026-11-23,0.62866,0.62866,0.0,1777650.0,3756547.5,1978897.5,569.13,64.4,32.0,180.0,0,0,0,True
+SAGE_Top_3,EXP-003,PILOT_5P_10C,777,2026-11-23,0.627565,0.637565,0.01,1728075.0,3694630.0,1966555.0,556.62,79.6,26.0,153.0,0,0,1,True

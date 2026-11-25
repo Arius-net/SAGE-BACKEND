@@ -1,0 +1,33 @@
+{
+  "best_experiment_id": "EXP-002",
+  "currency": "MXN",
+  "experiments": [
+    {
+      "experiment_id": "EXP-001",
+      "seed": 42,
+      "best_fitness": 0.701769,
+      "net_profit_mxn": 3013437.5,
+      "mean_final_nitrogen": 77.6,
+      "mean_water_deviation_mm": 93.0,
+      "feasible_nitrogen": true
+    },
+    {
+      "experiment_id": "EXP-002",
+      "seed": 2026,
+      "best_fitness": 0.769524,
+      "net_profit_mxn": 3852575.0,
+      "mean_final_nitrogen": 73.6,
+      "mean_water_deviation_mm": 3.0,
+      "feasible_nitrogen": true
+    },
+    {
+      "experiment_id": "EXP-003",
+      "seed": 777,
+      "best_fitness": 0.634319,
+      "net_profit_mxn": 1931580.0,
+      "mean_final_nitrogen": 82.8,
+      "mean_water_deviation_mm": 156.0,
+      "feasible_nitrogen": true
+    }
+  ]
+}
